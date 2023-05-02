@@ -18,5 +18,11 @@ This project deploys a multi-trading robot using Docker Compose.
 
 ```bash
 make run # Start the containers
+make cron # Start the containers in debug mode
+```
+
+In case you need to debug 
+
+```bash
 make debug # Start the containers in debug mode
 ```
