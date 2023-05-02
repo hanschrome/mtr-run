@@ -1,0 +1,13 @@
+version: "3.9"  # Adjust the version according to your Docker Compose installation
+
+services:
+  multi-trading-robot:
+    image: hanschrome/multi-trading-robot:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+      - ./.env:/app/.env
+    env_file:
+      - ./.env
+    restart: always

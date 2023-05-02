@@ -1,0 +1,10 @@
+{
+    "instances": {
+        "1": {
+            "id": 1,
+            "name": "LinearFunction",
+            "engine": "linear_function",
+            "active": true
+        }
+    }
+}
