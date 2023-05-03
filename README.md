@@ -11,14 +11,14 @@ This project deploys a multi-trading robot using Docker Compose.
 ## Setup
 
 1. Clone the repository
-2. Create a `.env` file in the project root directory with your desired environment variables.
-3. Modify the configuration in `data/1.json` to your liking.
+2. Modify the `.env` to add BINANCE_PUBLIC_KEY and BINANCE_PRIVATE_KEY.
+3. Modify the configuration in `data/1.json` to your liking. Check also the `data/index.json`.
 
 ## Usage
 
 ```bash
 make run # Start the containers
-make cron # Start the containers in debug mode
+make cron # Start the containers in debug mode, check .pid file created to know the pid you should kill.
 ```
 
 In case you need to debug 
