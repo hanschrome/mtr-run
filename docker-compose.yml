@@ -11,3 +11,12 @@ services:
     env_file:
       - ./.env
     restart: always
+  python:
+    image: python:3.9
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ./.env:/app/.env
+    env_file:
+      - ./.env
+    restart: 'no'
